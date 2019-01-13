@@ -9,6 +9,13 @@ import java.lang.ref.Cleaner;
  *
  */
 public class CleanerExample {
+
+    /**
+     * JVM 参数配置
+     * -Xmx3m -Xms3m
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         Cleaner cleaner = Cleaner.create();
         for (int i = 0; i < 10; i++) {

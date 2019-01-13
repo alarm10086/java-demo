@@ -118,6 +118,12 @@ public class FinalizerAndCleanerExample {
                         Thread.currentThread().getName() + " thread");
     }
 
+    /**
+     * JVM 参数配置
+     * -Xmx3m -Xms3m
+     *
+     * @param args
+     */
     public static void main(String[] args) throws Exception {
         // these will be cleaned using the cleaners pool
         for (int i = 0; i < 10; i++) {
